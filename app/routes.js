@@ -5,7 +5,7 @@ module.exports = {
 			});
 
 
-			app.post('/create',function(req,res,next){
+			app.post('/submit',function(req,res,next){
 				res.send("Hello world !!");
 			});
 			
