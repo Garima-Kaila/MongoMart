@@ -18,20 +18,15 @@ app.set('views',__dirname+'/views');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 
-
-
 Routes.create(app);
 
 
-function errorhandler(err,req,res,next){
-    console.error(err.message);
-    //console.error(err.stack);
+function errorhandler(err,req,res){
     res.status(500);
     res.render('error',{error:err.message});
 }
 app.use(errorhandler);
 
 app.listen(port,ipaddress,function() {
-            console.log('%s: Node server started on %s:%d ...',
-                        Date(Date.now() ), ipaddress, port);
+            console.log('%s: Node server started on %s:%d ...', Date(Date.now() ), ipaddress, port);
         });
