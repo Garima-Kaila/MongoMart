@@ -1,0 +1,30 @@
+{
+  "name": "mongo_mart",
+  "version": "1.0.0",
+  "description": "Learning MongoDB with NodeJS, Express and Angular (M.E.A.N)",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test --reporter spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Garima-Kaila/MongoMart.git"
+  },
+  "keywords": [
+    "Mongo",
+    "Express",
+    "Angular",
+    "Node",
+    "MEAN",
+    "Shopping",
+    "Cart",
+    "Online",
+    "Store"
+  ],
+  "author": "Garima",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Garima-Kaila/MongoMart/issues"
+  },
+  "homepage": "https://github.com/Garima-Kaila/MongoMart#readme"
+}
