@@ -4,7 +4,7 @@
   "description": "Learning MongoDB with NodeJS, Express and Angular (M.E.A.N)",
   "main": "app/index.js",
   "scripts": {
-	"start": "node app/index.js",
+    "start": "node app/index.js",
     "test": "mocha test --reporter spec"
   },
   "repository": {
@@ -34,5 +34,10 @@
     "express": "^4.14.0",
     "mongodb": "^2.2.10",
     "nunjucks": "^2.5.2"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.1.2",
+    "sinon": "^1.17.6"
   }
 }

@@ -6,6 +6,8 @@ var express = require('express'),
     engines = require('consolidate');
 var bodyParser = require('body-parser');
 
+var Routes = require('./routes');
+
 app.engine('html',engines.nunjucks);
 app.set('view engine','html');
 app.set('views',__dirname+'/views');
@@ -14,15 +16,7 @@ app.use(bodyParser.json());
 
 
 
-
-app.get("/",function(req,res,next){
-    res.render('home',{'name':'World'});
-});
-
-
-app.post('/',function(req,res,next){
-    res.send("Hello world");
-});
+Routes.create(app);
 
 
 function errorhandler(err,req,res,next){
