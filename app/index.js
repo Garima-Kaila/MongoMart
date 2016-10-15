@@ -1,6 +1,10 @@
 /**
  * Created by garima05 on 15-10-2016.
  */
+ 
+var ipaddress = process.env.OPENSHIFT_NODEJS_IP || "127.0.0.1";
+var port = process.env.OPENSHIFT_NODEJS_PORT || 8080;
+
 var express = require('express'),
     app = express(),
     engines = require('consolidate');
@@ -27,4 +31,7 @@ function errorhandler(err,req,res,next){
 }
 app.use(errorhandler);
 
-app.listen(3500);
+app.listen(port,ipaddress,function() {
+            console.log('%s: Node server started on %s:%d ...',
+                        Date(Date.now() ), ipaddress, port);
+        });
