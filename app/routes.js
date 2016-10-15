@@ -6,7 +6,7 @@ module.exports = {
 
 
 			app.post('/submit',function(req,res,next){
-				res.send("Hello world");
+				res.send("Hello world !!");
 			});
 			
 		}
