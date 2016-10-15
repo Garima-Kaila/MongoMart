@@ -27,6 +27,4 @@ function errorhandler(err,req,res){
 }
 app.use(errorhandler);
 
-app.listen(port,ipaddress,function() {
-            console.log('%s: Node server started on %s:%d ...', Date(Date.now() ), ipaddress, port);
-        });
+app.listen(port,ipaddress);
