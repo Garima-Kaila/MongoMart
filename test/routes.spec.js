@@ -27,7 +27,7 @@ describe('Routes', function() {
   it('create() should build route "/submit" for post ', function() {
 	Routes.create(mockApp);
 	
-	assert(mockApp.post.calledWith("/submit1"));
+	assert(mockApp.post.calledWith("/submit"));
   });
   
 });
