@@ -9,6 +9,7 @@ var express = require('express'),
     app = express(),
     engines = require('consolidate');
 var bodyParser = require('body-parser');
+app.use(express.static('app/static'));
 
 var Routes = require('./routes');
 
