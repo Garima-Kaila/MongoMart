@@ -46,7 +46,7 @@ function getRandomRespinBonus() {
 }
 
 module.exports = {
-    spin: () => {
+    spin: function() {
         const symbols = getRandomSymbols();
         const spinResult = {
             symbols: symbols,
