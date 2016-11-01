@@ -21,7 +21,7 @@ module.exports = {
                 utilities.sendResponse(res, 500, '', "Internal Server Error");
             }
         } else if (url.indexOf("/static") === 0) {
-            ctrlStatic.serveStaticFiles(url, (error, content) => {
+            ctrlStatic.serveStaticFiles(url, function(error, content) {
                 if (error) {
                     utilities.sendResponse(res, 500, '', "Internal Server Error - File not found");
                 } else {
