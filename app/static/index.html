@@ -1,0 +1,37 @@
+<html>
+<head>
+    <title>Coding Assignment</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link rel="stylesheet" type="text/css" href="./static/css/main.css">
+
+</head>
+<body>
+<div class="gamePanel">
+    <h1 class="winBanner">You won : <span id="winBanner"></span></h1>
+    <h1 class="bonusBanner">&nbsp;<span id="bonusBanner" style="display: none"></span></h1>
+    <div id="reelArea">
+        <div class="reelStrip"><img id="reel1" src="./static/img/Symbol_1.png"/></div>
+        <div class="reelStrip"><img id="reel2" src="./static/img/Symbol_2.png"/></div>
+        <div class="reelStrip"><img id="reel3" src="./static/img/Symbol_3.png"/></div>
+    </div>
+
+    <button id="btnSpin">
+        <img alt="button" src="./static/img/button.png"/>
+    </button>
+
+</div>
+<script type="text/javascript" src="./static/js/utility.js"></script>
+<script type="text/javascript" src="./static/js/game.js"></script>
+<script>
+    var game = new Game({
+        btnSpin: document.getElementById("btnSpin"),
+        bonusBanner: document.getElementById("bonusBanner"),
+        winBanner: document.getElementById("winBanner"),
+        reel1: document.getElementById("reel1"),
+        reel2: document.getElementById("reel2"),
+        reel3: document.getElementById("reel3")
+    })
+</script>
+
+</body>
+</html>

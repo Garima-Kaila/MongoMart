@@ -1,43 +1,24 @@
 {
-  "name": "mongo_mart",
+  "name": "netent_code_assignment",
   "version": "1.0.0",
-  "description": "Learning MongoDB with NodeJS, Express and Angular (M.E.A.N)",
+  "description": "basic slot game",
   "main": "app/index.js",
+  "directories": {
+    "test": "test"
+  },
   "scripts": {
     "start": "node app/index.js",
-    "test": "mocha test --reporter spec"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Garima-Kaila/MongoMart.git"
+    "test": "mocha test/server/**/*.js --reporter spec"
   },
   "keywords": [
-    "Mongo",
-    "Express",
-    "Angular",
-    "Node",
-    "MEAN",
-    "Shopping",
-    "Cart",
-    "Online",
-    "Store"
+    "slot"
   ],
-  "author": "Garima",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/Garima-Kaila/MongoMart/issues"
-  },
-  "homepage": "https://github.com/Garima-Kaila/MongoMart#readme",
-  "dependencies": {
-    "body-parser": "^1.15.2",
-    "consolidate": "^0.14.1",
-    "express": "^4.14.0",
-    "mongodb": "^2.2.10",
-    "nunjucks": "^2.5.2"
-  },
+  "author": "Garima Kaila",
+  "license": "ISC",
   "devDependencies": {
     "chai": "^3.5.0",
     "mocha": "^3.1.2",
-    "sinon": "^1.17.6"
+    "sinon": "^1.17.6",
+    "sinon-chai": "^2.8.0"
   }
 }
