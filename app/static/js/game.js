@@ -83,7 +83,7 @@
                     me.showServerResponse(serverResponse);
                 }, me.minimumAnimationDuration);
             }, function () {
-                alert('Something went wrong.');
+                // make it pop as for better ui - alert('Something went wrong.');
             });
         }
     };
