@@ -1,17 +1,17 @@
 /**
  * Created by garima05 on 31-10-2016.
  */
-var ipaddress = process.env.OPENSHIFT_NODEJS_IP || "127.0.0.1";
-var port = process.env.OPENSHIFT_NODEJS_PORT || 8080;
 
 
 var http = require('http');
 var routes = require('./routes');
 
+var port = 8080;
+var server = "localhost";
 
 http.createServer((req, res) => {
     routes.serve(req, res);
-}).listen(port,ipaddress,function(){
-    console.log("Server running at http://"+ ipaddress + ":" + port);
+}).listen(port,function(){
+    console.log("Server running at http://"+ server + ":" + port);
 });
 

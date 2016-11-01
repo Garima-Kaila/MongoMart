@@ -6,13 +6,6 @@ var ctrlStatic = require('./controllers/static');
 var ctrlGame = require('./controllers/game');
 var utilities = require('./utilities');
 
-function getContentType(filePath) {
-    // refer : https://nodejs.org/api/path.html
-    // refer : http://stackoverflow.com/questions/10865347/node-js-get-file-extension
-    var ext = path.extname(filePath);
-
-}
-
 module.exports = {
     serve: function (req, res) {
         var url = req.url;

@@ -25,7 +25,6 @@
             xhr.responseType = 'json';
             xhr.onreadystatechange = function () {
                 var status;
-                var data;
                 // https://xhr.spec.whatwg.org/#dom-xmlhttprequest-readystate
                 if (xhr.readyState == 4) { // `DONE`
                     status = xhr.status;
